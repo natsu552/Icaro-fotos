@@ -7,112 +7,375 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <h1>Icaro Hub</h1>
-    </header>
 
-    <main class="news-container">
+<header>
+    <h1>Notícias</h1>
+</header>
 
-        <div class="news-item">
-            <img src="foto1.jpg" alt="Notícia 1">
-            <p class="comment">Comentário sobre a notícia 1.</p>
-        </div>
+<main class="news-container">
 
-        <div class="news-item">
-            <img src="foto2.jpg" alt="Notícia 2">
-            <p class="comment">Comentário sobre a notícia 2.</p>
-        </div>
+<!-- FOTO 1 -->
+<div class="news-item">
+<img src="foto1.jpg">
+<p class="comment">Comentário da notícia 1</p>
+<button class="open-comments" onclick="openComments(this,1)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,1)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto3.jpg" alt="Notícia 3">
-            <p class="comment">Comentário sobre a notícia 3.</p>
-        </div>
+<!-- FOTO 2 -->
+<div class="news-item">
+<img src="foto2.jpg">
+<p class="comment">Comentário da notícia 2</p>
+<button class="open-comments" onclick="openComments(this,2)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,2)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto4.jpg" alt="Notícia 4">
-            <p class="comment">Comentário sobre a notícia 4.</p>
-        </div>
+<!-- FOTO 3 -->
+<div class="news-item">
+<img src="foto3.jpg">
+<p class="comment">Comentário da notícia 3</p>
+<button class="open-comments" onclick="openComments(this,3)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,3)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto5.jpg" alt="Notícia 5">
-            <p class="comment">Comentário sobre a notícia 5.</p>
-        </div>
+<!-- FOTO 4 -->
+<div class="news-item">
+<img src="foto4.jpg">
+<p class="comment">Comentário da notícia 4</p>
+<button class="open-comments" onclick="openComments(this,4)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,4)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto6.jpg" alt="Notícia 6">
-            <p class="comment">Comentário sobre a notícia 6.</p>
-        </div>
+<!-- FOTO 5 -->
+<div class="news-item">
+<img src="foto5.jpg">
+<p class="comment">Comentário da notícia 5</p>
+<button class="open-comments" onclick="openComments(this,5)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,5)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto7.jpg" alt="Notícia 7">
-            <p class="comment">Comentário sobre a notícia 7.</p>
-        </div>
+<!-- FOTO 6 -->
+<div class="news-item">
+<img src="foto6.jpg">
+<p class="comment">Comentário da notícia 6</p>
+<button class="open-comments" onclick="openComments(this,6)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,6)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto8.jpg" alt="Notícia 8">
-            <p class="comment">Comentário sobre a notícia 8.</p>
-        </div>
+<!-- FOTO 7 -->
+<div class="news-item">
+<img src="foto7.jpg">
+<p class="comment">Comentário da notícia 7</p>
+<button class="open-comments" onclick="openComments(this,7)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,7)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto9.jpg" alt="Notícia 9">
-            <p class="comment">Comentário sobre a notícia 9.</p>
-        </div>
+<!-- FOTO 8 -->
+<div class="news-item">
+<img src="foto8.jpg">
+<p class="comment">Comentário da notícia 8</p>
+<button class="open-comments" onclick="openComments(this,8)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,8)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto10.jpg" alt="Notícia 10">
-            <p class="comment">Comentário sobre a notícia 10.</p>
-        </div>
+<!-- FOTO 9 -->
+<div class="news-item">
+<img src="foto9.jpg">
+<p class="comment">Comentário da notícia 9</p>
+<button class="open-comments" onclick="openComments(this,9)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,9)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto11.jpg" alt="Notícia 11">
-            <p class="comment">Comentário sobre a notícia 11.</p>
-        </div>
+<!-- FOTO 10 -->
+<div class="news-item">
+<img src="foto10.jpg">
+<p class="comment">Comentário da notícia 10</p>
+<button class="open-comments" onclick="openComments(this,10)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,10)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto12.jpg" alt="Notícia 12">
-            <p class="comment">Comentário sobre a notícia 12.</p>
-        </div>
+<!-- FOTO 11 -->
+<div class="news-item">
+<img src="foto11.jpg">
+<p class="comment">Comentário da notícia 11</p>
+<button class="open-comments" onclick="openComments(this,11)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,11)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto13.jpg" alt="Notícia 13">
-            <p class="comment">Comentário sobre a notícia 13.</p>
-        </div>
+<!-- FOTO 12 -->
+<div class="news-item">
+<img src="foto12.jpg">
+<p class="comment">Comentário da notícia 12</p>
+<button class="open-comments" onclick="openComments(this,12)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,12)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto14.jpg" alt="Notícia 14">
-            <p class="comment">Comentário sobre a notícia 14.</p>
-        </div>
+<!-- FOTO 13 -->
+<div class="news-item">
+<img src="foto13.jpg">
+<p class="comment">Comentário da notícia 13</p>
+<button class="open-comments" onclick="openComments(this,13)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,13)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto15.jpg" alt="Notícia 15">
-            <p class="comment">Comentário sobre a notícia 15.</p>
-        </div>
+<!-- FOTO 14 -->
+<div class="news-item">
+<img src="foto14.jpg">
+<p class="comment">Comentário da notícia 14</p>
+<button class="open-comments" onclick="openComments(this,14)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,14)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto16.jpg" alt="Notícia 16">
-            <p class="comment">Comentário sobre a notícia 16.</p>
-        </div>
+<!-- FOTO 15 -->
+<div class="news-item">
+<img src="foto15.jpg">
+<p class="comment">Comentário da notícia 15</p>
+<button class="open-comments" onclick="openComments(this,15)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,15)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto17.jpg" alt="Notícia 17">
-            <p class="comment">Comentário sobre a notícia 17.</p>
-        </div>
+<!-- FOTO 16 -->
+<div class="news-item">
+<img src="foto16.jpg">
+<p class="comment">Comentário da notícia 16</p>
+<button class="open-comments" onclick="openComments(this,16)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,16)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto18.jpg" alt="Notícia 18">
-            <p class="comment">Comentário sobre a notícia 18.</p>
-        </div>
+<!-- FOTO 17 -->
+<div class="news-item">
+<img src="foto17.jpg">
+<p class="comment">Comentário da notícia 17</p>
+<button class="open-comments" onclick="openComments(this,17)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,17)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto19.jpg" alt="Notícia 19">
-            <p class="comment">Comentário sobre a notícia 19.</p>
-        </div>
+<!-- FOTO 18 -->
+<div class="news-item">
+<img src="foto18.jpg">
+<p class="comment">Comentário da notícia 18</p>
+<button class="open-comments" onclick="openComments(this,18)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,18)">Enviar</button>
+</div>
+</div>
+</div>
 
-        <div class="news-item">
-            <img src="foto20.jpg" alt="Notícia 20">
-            <p class="comment">Comentário sobre a notícia 20.</p>
-        </div>
+<!-- FOTO 19 -->
+<div class="news-item">
+<img src="foto19.jpg">
+<p class="comment">Comentário da notícia 19</p>
+<button class="open-comments" onclick="openComments(this,19)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,19)">Enviar</button>
+</div>
+</div>
+</div>
 
-    </main>
+<!-- FOTO 20 -->
+<div class="news-item">
+<img src="foto20.jpg">
+<p class="comment">Comentário da notícia 20</p>
+<button class="open-comments" onclick="openComments(this,20)">Comentar nessa foto</button>
+<div class="comments-panel">
+<div class="panel-header">
+<span>Comentários</span>
+<button onclick="closeComments(this)">✕</button>
+</div>
+<div class="comments-list"></div>
+<div class="comment-box">
+<input type="text" placeholder="Adicione um comentário...">
+<button onclick="addComment(this,20)">Enviar</button>
+</div>
+</div>
+</div>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>

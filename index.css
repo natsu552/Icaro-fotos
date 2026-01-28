@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,40 +5,30 @@
 }
 
 body {
-    background-color: #000; /* fundo preto */
-    color: #fff; /* texto branco */
-    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    text-align: center;
     padding: 20px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 2em;
-    color: #f0f0f0;
-}
-
+/* GRID */
 .news-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
-    justify-content: center;
+    padding: 20px;
 }
 
+/* CARD */
 .news-item {
-    background-color: #111; /* caixa levemente mais clara */
-    border-radius: 10px;
+    background: #111;
+    border-radius: 12px;
     overflow: hidden;
-    width: 400px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-    transition: transform 0.2s;
-}
-
-.news-item:hover {
-    transform: scale(1.03);
 }
 
 .news-item img {
@@ -48,8 +37,92 @@ h1 {
 }
 
 .comment {
-    padding: 10px;
-    font-size: 0.95em;
+    padding: 12px;
+    background: #1a1a1a;
     color: #ddd;
-    background-color: #222;
+}
+
+.open-comments {
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* PAINEL FULLSCREEN */
+.comments-panel {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+
+.comments-panel.active {
+    transform: translateY(0);
+}
+
+/* HEADER DO PAINEL */
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #222;
+    font-size: 1em;
+}
+
+.panel-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+/* LISTA */
+.comments-list {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.comments-list p {
+    background: #1c1c1c;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+/* CAIXA FIXA EMBAIXO */
+.comment-box {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid #222;
+    background: #000;
+}
+
+.comment-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #222;
+    color: #fff;
+}
+
+.comment-box button {
+    padding: 10px 14px;
+    border-radius: 50%;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
 }
